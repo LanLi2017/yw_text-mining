@@ -1,0 +1,88 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/topic_modeling.py').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 1, 'begin', '@begin', 'topic_modeling').
+annotation(2, 1, 1, 'desc', '@desc', 'using NLTK and YW to do Topic_modeling').
+annotation(3, 1, 2, 'in', '@in', 'Static_text').
+annotation(4, 1, 2, 'uri', '@uri', 'file:news2012.txt').
+annotation(5, 1, 3, 'param', '@param', 'stopwords').
+annotation(6, 1, 4, 'param', '@param', 'regexr').
+annotation(7, 1, 4, 'as', '@as', 'regular_expression').
+annotation(8, 1, 5, 'param', '@param', 'num_topics').
+annotation(9, 1, 6, 'param', '@param', 'num_iteration').
+annotation(10, 1, 7, 'out', '@out', 'run_log').
+annotation(11, 1, 7, 'desc', '@desc', 'record the variable data for all the events occur in the procedure').
+annotation(12, 1, 8, 'out', '@out', 'LDA_model').
+annotation(13, 1, 8, 'desc', '@desc', 'using LDA model to do topic modeling').
+annotation(14, 1, 8, 'uri', '@uri', 'file:LDA_model.txt').
+annotation(15, 1, 17, 'begin', '@begin', 'initialize_run').
+annotation(16, 1, 17, 'desc', '@desc', 'Using Logging to track events that happen when software runs').
+annotation(17, 1, 18, 'out', '@out', 'run_log').
+annotation(18, 1, 18, 'uri', '@uri', 'file:run_log.log').
+annotation(19, 1, 21, 'end', '@end', 'initialize_run').
+annotation(20, 1, 23, 'begin', '@begin', 'ConstructCorpus').
+annotation(21, 1, 23, 'desc', '@desc', 'Using Gensim to construct corpus to train LDA models').
+annotation(22, 1, 24, 'in', '@in', 'Static_text').
+annotation(23, 1, 24, 'desc', '@desc', 'Text file which contains static text data').
+annotation(24, 1, 24, 'uri', '@uri', 'file:news2012.txt').
+annotation(25, 1, 25, 'param', '@param', 'stopwords').
+annotation(26, 1, 26, 'param', '@param', 'regexr').
+annotation(27, 1, 26, 'as', '@as', 'regular_expression').
+annotation(28, 1, 27, 'out', '@out', 'dictionary').
+annotation(29, 1, 27, 'as', '@as', 'dictionary').
+annotation(30, 1, 27, 'desc', '@desc', 'a mapping between words and their integer ids').
+annotation(31, 1, 28, 'out', '@out', 'corpus').
+annotation(32, 1, 28, 'as', '@as', 'Corpus').
+annotation(33, 1, 31, 'begin', '@begin', 'AccessText').
+annotation(34, 1, 31, 'desc', '@desc', 'To read the text data').
+annotation(35, 1, 32, 'in', '@in', 'Static_text').
+annotation(36, 1, 32, 'uri', '@uri', 'file:news2012.txt').
+annotation(37, 1, 33, 'out', '@out', 'text_file').
+annotation(38, 1, 33, 'as', '@as', 'TextRead').
+annotation(39, 1, 49, 'end', '@end', 'AccessText').
+annotation(40, 1, 51, 'begin', '@begin', 'PreprocessFile').
+annotation(41, 1, 51, 'desc', '@desc', 'To preprocess the text data').
+annotation(42, 1, 52, 'param', '@param', 'stopwords').
+annotation(43, 1, 53, 'param', '@param', 'regular_expression').
+annotation(44, 1, 54, 'in', '@in', 'TextRead').
+annotation(45, 1, 55, 'out', '@out', 'dictionary').
+annotation(46, 1, 56, 'out', '@out', 'Corpus').
+annotation(47, 1, 98, 'end', '@end', 'PreprocessFile').
+annotation(48, 1, 100, 'end', '@end', 'ConstructCorpus').
+annotation(49, 1, 102, 'begin', '@begin', 'Train_LDA_Model').
+annotation(50, 1, 102, 'desc', '@desc', 'using Gensim.LDA to do training').
+annotation(51, 1, 103, 'in', '@in', 'Corpus').
+annotation(52, 1, 104, 'in', '@in', 'dictionary').
+annotation(53, 1, 105, 'param', '@param', 'num_iteration').
+annotation(54, 1, 106, 'param', '@param', 'num_topics').
+annotation(55, 1, 107, 'out', '@out', 'LDA_model').
+annotation(56, 1, 107, 'desc', '@desc', 'Transformation from BOW counts into a topic space').
+annotation(57, 1, 107, 'uri', '@uri', 'file:LDA_model.txt').
+annotation(58, 1, 120, 'end', '@end', 'Train_LDA_Model').
+annotation(59, 1, 121, 'end', '@end', 'topic_modeling').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(2, 1).
+annotation_qualifies(4, 3).
+annotation_qualifies(7, 6).
+annotation_qualifies(11, 10).
+annotation_qualifies(13, 12).
+annotation_qualifies(14, 12).
+annotation_qualifies(16, 15).
+annotation_qualifies(18, 17).
+annotation_qualifies(21, 20).
+annotation_qualifies(23, 22).
+annotation_qualifies(24, 22).
+annotation_qualifies(27, 26).
+annotation_qualifies(29, 28).
+annotation_qualifies(30, 28).
+annotation_qualifies(32, 31).
+annotation_qualifies(34, 33).
+annotation_qualifies(36, 35).
+annotation_qualifies(38, 37).
+annotation_qualifies(41, 40).
+annotation_qualifies(50, 49).
+annotation_qualifies(56, 55).
+annotation_qualifies(57, 55).

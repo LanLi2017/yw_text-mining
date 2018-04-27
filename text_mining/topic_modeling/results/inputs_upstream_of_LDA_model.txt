@@ -1,0 +1,12 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product Topicmodeling_Result.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro('LDA_model',num_topics).
+q2_pro('LDA_model',num_iteration).
+q2_pro('LDA_model',regular_expression).
+q2_pro('LDA_model',stopwords).
+q2_pro('LDA_model','Static_text').

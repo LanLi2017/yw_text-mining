@@ -1,0 +1,174 @@
+2018-04-26 22:16:03,930 : INFO : collecting all words and their counts
+2018-04-26 22:16:03,930 : INFO : PROGRESS: at sentence #0, processed 0 words and 0 word types
+2018-04-26 22:16:11,193 : INFO : collected 1319732 word types from a corpus of 2972637 words (unigram + bigrams) and 1740 sentences
+2018-04-26 22:16:11,195 : INFO : using 1319732 counts as vocab in Phrases<0 vocab, min_count=20, threshold=10.0, max_vocab_size=40000000>
+2018-04-26 22:16:27,640 : INFO : adding document #0 to Dictionary(0 unique tokens: [])
+2018-04-26 22:16:30,671 : INFO : built Dictionary(40937 unique tokens: ['able', 'abstract', 'acad', 'access', 'accommodated']...) from 1740 documents (total 3228405 corpus positions)
+2018-04-26 22:16:30,841 : INFO : discarding 32408 tokens: [('abstract', 1740), ('accommodated', 12), ('actu', 10), ('assignment_problem', 18), ('assures', 18), ('b', 1562), ('backbone', 9), ('backtracking', 7), ('cii', 8), ('circled', 8)]...
+2018-04-26 22:16:30,841 : INFO : keeping 8529 tokens which were in no less than 20 and no more than 870 (=50.0%) documents
+2018-04-26 22:16:30,861 : INFO : resulting dictionary: Dictionary(8529 unique tokens: ['able', 'acad', 'access', 'actually', 'added']...)
+2018-04-26 22:16:32,898 : INFO : using symmetric alpha at 0.05
+2018-04-26 22:16:32,898 : INFO : using symmetric eta at 0.05
+2018-04-26 22:16:32,900 : INFO : using serial LDA version on this node
+2018-04-26 22:16:32,923 : INFO : running online (multi-pass) LDA training, 20 topics, 20 passes over the supplied corpus of 1740 documents, updating model once every 1740 documents, evaluating perplexity every 1740 documents, iterating 500x with a convergence threshold of 0.001000
+2018-04-26 22:17:07,557 : INFO : -9.740 per-word bound, 855.3 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:17:07,559 : INFO : PROGRESS: pass 0, at document #1740/1740
+2018-04-26 22:17:37,055 : INFO : topic #5 (0.050): 0.007*"node" + 0.004*"layer" + 0.003*"gaussian" + 0.003*"neuron" + 0.003*"cost" + 0.003*"matrix" + 0.003*"code" + 0.003*"hidden" + 0.003*"architecture" + 0.003*"class"
+2018-04-26 22:17:37,056 : INFO : topic #13 (0.050): 0.006*"signal" + 0.005*"image" + 0.004*"layer" + 0.004*"rule" + 0.004*"net" + 0.003*"neuron" + 0.003*"class" + 0.003*"object" + 0.003*"recognition" + 0.003*"motion"
+2018-04-26 22:17:37,056 : INFO : topic #18 (0.050): 0.014*"hidden" + 0.010*"hidden_unit" + 0.005*"layer" + 0.004*"teacher" + 0.004*"class" + 0.004*"student" + 0.003*"generalization" + 0.003*"bias" + 0.003*"word" + 0.003*"prediction"
+2018-04-26 22:17:37,057 : INFO : topic #4 (0.050): 0.004*"response" + 0.004*"neuron" + 0.004*"bound" + 0.003*"signal" + 0.003*"noise" + 0.003*"class" + 0.003*"estimate" + 0.003*"stimulus" + 0.003*"motion" + 0.003*"spike"
+2018-04-26 22:17:37,057 : INFO : topic #16 (0.050): 0.004*"image" + 0.003*"node" + 0.003*"field" + 0.003*"neuron" + 0.003*"signal" + 0.003*"recognition" + 0.003*"dynamic" + 0.002*"rule" + 0.002*"optimal" + 0.002*"control"
+2018-04-26 22:17:37,058 : INFO : topic diff=1.779677, rho=1.000000
+2018-04-26 22:17:55,215 : INFO : -8.279 per-word bound, 310.6 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:17:55,215 : INFO : PROGRESS: pass 1, at document #1740/1740
+2018-04-26 22:18:09,529 : INFO : topic #7 (0.050): 0.011*"circuit" + 0.007*"chip" + 0.007*"analog" + 0.005*"voltage" + 0.005*"signal" + 0.005*"image" + 0.004*"neuron" + 0.004*"frequency" + 0.004*"vlsi" + 0.004*"cell"
+2018-04-26 22:18:09,530 : INFO : topic #3 (0.050): 0.008*"neuron" + 0.008*"channel" + 0.007*"circuit" + 0.007*"cell" + 0.006*"rule" + 0.005*"voltage" + 0.004*"curve" + 0.003*"distance" + 0.003*"layer" + 0.003*"dynamic"
+2018-04-26 22:18:09,530 : INFO : topic #5 (0.050): 0.009*"node" + 0.005*"code" + 0.004*"cost" + 0.004*"layer" + 0.004*"gaussian" + 0.004*"matrix" + 0.003*"bit" + 0.003*"log" + 0.003*"architecture" + 0.003*"expert"
+2018-04-26 22:18:09,530 : INFO : topic #13 (0.050): 0.007*"signal" + 0.007*"image" + 0.005*"layer" + 0.004*"object" + 0.004*"rule" + 0.004*"net" + 0.004*"motion" + 0.003*"neuron" + 0.003*"class" + 0.003*"recognition"
+2018-04-26 22:18:09,530 : INFO : topic #4 (0.050): 0.006*"bound" + 0.004*"estimate" + 0.004*"density" + 0.004*"sample" + 0.004*"source" + 0.004*"class" + 0.003*"noise" + 0.003*"let" + 0.003*"matrix" + 0.003*"signal"
+2018-04-26 22:18:09,531 : INFO : topic diff=0.514105, rho=0.577350
+2018-04-26 22:18:24,159 : INFO : -8.173 per-word bound, 288.6 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:18:24,159 : INFO : PROGRESS: pass 2, at document #1740/1740
+2018-04-26 22:18:34,473 : INFO : topic #13 (0.050): 0.010*"image" + 0.008*"signal" + 0.006*"object" + 0.005*"motion" + 0.005*"rule" + 0.005*"layer" + 0.005*"net" + 0.004*"sound" + 0.003*"class" + 0.003*"recognition"
+2018-04-26 22:18:34,474 : INFO : topic #16 (0.050): 0.006*"movement" + 0.006*"arm" + 0.006*"field" + 0.005*"motor" + 0.005*"image" + 0.005*"trajectory" + 0.005*"control" + 0.004*"joint" + 0.004*"node" + 0.003*"dynamic"
+2018-04-26 22:18:34,474 : INFO : topic #18 (0.050): 0.023*"hidden" + 0.017*"hidden_unit" + 0.008*"generalization" + 0.006*"layer" + 0.006*"teacher" + 0.006*"student" + 0.004*"bias" + 0.004*"generalization_error" + 0.004*"training_set" + 0.004*"prediction"
+2018-04-26 22:18:34,474 : INFO : topic #8 (0.050): 0.007*"control" + 0.006*"policy" + 0.006*"action" + 0.005*"reinforcement" + 0.004*"robot" + 0.004*"dynamic" + 0.004*"trial" + 0.003*"optimal" + 0.003*"decision" + 0.003*"map"
+2018-04-26 22:18:34,474 : INFO : topic #10 (0.050): 0.006*"neuron" + 0.006*"gaussian" + 0.005*"stimulus" + 0.005*"orientation" + 0.005*"image" + 0.005*"field" + 0.004*"cell" + 0.004*"map" + 0.004*"component" + 0.004*"cortex"
+2018-04-26 22:18:34,475 : INFO : topic diff=0.517893, rho=0.500000
+2018-04-26 22:18:47,146 : INFO : -8.106 per-word bound, 275.5 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:18:47,147 : INFO : PROGRESS: pass 3, at document #1740/1740
+2018-04-26 22:18:55,757 : INFO : topic #3 (0.050): 0.012*"channel" + 0.008*"neuron" + 0.008*"rule" + 0.007*"circuit" + 0.007*"cell" + 0.006*"voltage" + 0.005*"winner" + 0.005*"curve" + 0.004*"distance" + 0.004*"winner_take"
+2018-04-26 22:18:55,758 : INFO : topic #11 (0.050): 0.007*"matrix" + 0.005*"object" + 0.005*"solution" + 0.005*"image" + 0.004*"dynamic" + 0.004*"attractor" + 0.004*"component" + 0.004*"view" + 0.003*"convergence" + 0.003*"kernel"
+2018-04-26 22:18:55,758 : INFO : topic #17 (0.050): 0.008*"layer" + 0.007*"image" + 0.006*"character" + 0.006*"hidden" + 0.006*"action" + 0.006*"net" + 0.005*"architecture" + 0.005*"node" + 0.005*"module" + 0.004*"recognition"
+2018-04-26 22:18:55,758 : INFO : topic #19 (0.050): 0.009*"memory" + 0.005*"image" + 0.004*"signal" + 0.004*"matrix" + 0.004*"tree" + 0.004*"query" + 0.003*"capacity" + 0.003*"layer" + 0.003*"role" + 0.003*"net"
+2018-04-26 22:18:55,758 : INFO : topic #5 (0.050): 0.013*"node" + 0.009*"code" + 0.006*"bit" + 0.005*"cost" + 0.004*"matrix" + 0.004*"layer" + 0.004*"gaussian" + 0.004*"coding" + 0.004*"log" + 0.003*"decoding"
+2018-04-26 22:18:55,759 : INFO : topic diff=0.525199, rho=0.447214
+2018-04-26 22:19:07,797 : INFO : -8.062 per-word bound, 267.3 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:19:07,798 : INFO : PROGRESS: pass 4, at document #1740/1740
+2018-04-26 22:19:16,396 : INFO : topic #15 (0.050): 0.007*"class" + 0.007*"image" + 0.007*"neuron" + 0.006*"classifier" + 0.006*"object" + 0.006*"cluster" + 0.005*"layer" + 0.005*"threshold" + 0.004*"clustering" + 0.004*"field"
+2018-04-26 22:19:16,396 : INFO : topic #13 (0.050): 0.018*"image" + 0.009*"signal" + 0.009*"object" + 0.006*"sound" + 0.005*"motion" + 0.004*"layer" + 0.004*"region" + 0.004*"rule" + 0.004*"visual" + 0.004*"net"
+2018-04-26 22:19:16,397 : INFO : topic #2 (0.050): 0.012*"neuron" + 0.007*"matrix" + 0.006*"dynamic" + 0.006*"rule" + 0.005*"eq" + 0.004*"connection" + 0.004*"region" + 0.004*"signal" + 0.004*"layer" + 0.004*"component"
+2018-04-26 22:19:16,397 : INFO : topic #3 (0.050): 0.013*"channel" + 0.008*"rule" + 0.008*"neuron" + 0.007*"cell" + 0.007*"circuit" + 0.006*"voltage" + 0.006*"winner" + 0.005*"distance" + 0.005*"curve" + 0.005*"winner_take"
+2018-04-26 22:19:16,397 : INFO : topic #8 (0.050): 0.010*"policy" + 0.009*"action" + 0.009*"control" + 0.008*"reinforcement" + 0.005*"robot" + 0.005*"reinforcement_learning" + 0.005*"dynamic" + 0.005*"optimal" + 0.004*"trial" + 0.004*"decision"
+2018-04-26 22:19:16,397 : INFO : topic diff=0.528535, rho=0.408248
+2018-04-26 22:19:27,997 : INFO : -8.032 per-word bound, 261.7 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:19:27,998 : INFO : PROGRESS: pass 5, at document #1740/1740
+2018-04-26 22:19:35,540 : INFO : topic #15 (0.050): 0.007*"class" + 0.007*"image" + 0.006*"cluster" + 0.006*"classifier" + 0.006*"neuron" + 0.006*"object" + 0.005*"clustering" + 0.005*"threshold" + 0.005*"layer" + 0.005*"field"
+2018-04-26 22:19:35,540 : INFO : topic #12 (0.050): 0.018*"cell" + 0.017*"neuron" + 0.009*"response" + 0.008*"spike" + 0.008*"stimulus" + 0.007*"activity" + 0.007*"visual" + 0.006*"firing" + 0.006*"synaptic" + 0.005*"signal"
+2018-04-26 22:19:35,540 : INFO : topic #1 (0.050): 0.013*"mixture" + 0.009*"component" + 0.008*"em" + 0.005*"density" + 0.005*"gaussian" + 0.005*"likelihood" + 0.005*"cell" + 0.004*"visual" + 0.004*"signal" + 0.004*"missing"
+2018-04-26 22:19:35,541 : INFO : topic #18 (0.050): 0.028*"hidden" + 0.020*"hidden_unit" + 0.011*"generalization" + 0.007*"layer" + 0.007*"teacher" + 0.006*"student" + 0.005*"generalization_error" + 0.005*"training_set" + 0.005*"bias" + 0.004*"prediction"
+2018-04-26 22:19:35,541 : INFO : topic #11 (0.050): 0.008*"matrix" + 0.006*"solution" + 0.005*"object" + 0.005*"attractor" + 0.005*"dynamic" + 0.005*"image" + 0.004*"component" + 0.004*"view" + 0.004*"transformation" + 0.004*"rotation"
+2018-04-26 22:19:35,541 : INFO : topic diff=0.523210, rho=0.377964
+2018-04-26 22:19:47,129 : INFO : -8.008 per-word bound, 257.5 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:19:47,129 : INFO : PROGRESS: pass 6, at document #1740/1740
+2018-04-26 22:19:54,284 : INFO : topic #6 (0.050): 0.013*"speech" + 0.012*"recognition" + 0.011*"word" + 0.008*"sequence" + 0.007*"tree" + 0.006*"class" + 0.006*"hidden" + 0.006*"context" + 0.006*"net" + 0.006*"hmm"
+2018-04-26 22:19:54,284 : INFO : topic #14 (0.050): 0.013*"face" + 0.012*"image" + 0.011*"rule" + 0.007*"word" + 0.007*"recognition" + 0.006*"class" + 0.006*"loss" + 0.005*"string" + 0.005*"detection" + 0.005*"sequence"
+2018-04-26 22:19:54,284 : INFO : topic #12 (0.050): 0.018*"cell" + 0.018*"neuron" + 0.009*"response" + 0.008*"spike" + 0.008*"stimulus" + 0.007*"activity" + 0.007*"visual" + 0.006*"firing" + 0.006*"synaptic" + 0.005*"signal"
+2018-04-26 22:19:54,285 : INFO : topic #3 (0.050): 0.015*"channel" + 0.008*"rule" + 0.007*"neuron" + 0.007*"cell" + 0.006*"voltage" + 0.006*"winner" + 0.006*"circuit" + 0.006*"winner_take" + 0.005*"matching" + 0.005*"distance"
+2018-04-26 22:19:54,285 : INFO : topic #10 (0.050): 0.009*"orientation" + 0.008*"field" + 0.007*"map" + 0.007*"gaussian" + 0.007*"image" + 0.006*"correlation" + 0.005*"basis" + 0.004*"component" + 0.004*"cortex" + 0.004*"stimulus"
+2018-04-26 22:19:54,285 : INFO : topic diff=0.509917, rho=0.353553
+2018-04-26 22:20:05,441 : INFO : -7.990 per-word bound, 254.3 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:20:05,442 : INFO : PROGRESS: pass 7, at document #1740/1740
+2018-04-26 22:20:12,237 : INFO : topic #19 (0.050): 0.022*"memory" + 0.007*"capacity" + 0.005*"associative" + 0.004*"query" + 0.004*"tree" + 0.004*"matrix" + 0.004*"stored" + 0.004*"net" + 0.004*"retrieval" + 0.004*"instruction"
+2018-04-26 22:20:12,237 : INFO : topic #9 (0.050): 0.008*"optimal" + 0.006*"solution" + 0.005*"action" + 0.005*"control" + 0.005*"hint" + 0.004*"let" + 0.004*"language" + 0.004*"genetic" + 0.004*"condition" + 0.004*"theorem"
+2018-04-26 22:20:12,237 : INFO : topic #4 (0.050): 0.008*"bound" + 0.007*"sample" + 0.006*"approximation" + 0.006*"estimate" + 0.005*"class" + 0.005*"density" + 0.005*"let" + 0.005*"gaussian" + 0.004*"log" + 0.004*"prior"
+2018-04-26 22:20:12,238 : INFO : topic #3 (0.050): 0.016*"channel" + 0.008*"rule" + 0.007*"cell" + 0.007*"winner" + 0.007*"neuron" + 0.006*"voltage" + 0.006*"matching" + 0.006*"winner_take" + 0.006*"distance" + 0.005*"curve"
+2018-04-26 22:20:12,238 : INFO : topic #10 (0.050): 0.010*"orientation" + 0.008*"field" + 0.008*"map" + 0.007*"gaussian" + 0.007*"image" + 0.006*"correlation" + 0.006*"basis" + 0.005*"receptive" + 0.005*"cortex" + 0.005*"component"
+2018-04-26 22:20:12,238 : INFO : topic diff=0.490341, rho=0.333333
+2018-04-26 22:20:23,009 : INFO : -7.975 per-word bound, 251.6 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:20:23,009 : INFO : PROGRESS: pass 8, at document #1740/1740
+2018-04-26 22:20:29,640 : INFO : topic #8 (0.050): 0.014*"action" + 0.012*"policy" + 0.010*"control" + 0.010*"reinforcement" + 0.007*"reinforcement_learning" + 0.006*"optimal" + 0.005*"reward" + 0.005*"dynamic" + 0.005*"robot" + 0.005*"decision"
+2018-04-26 22:20:29,640 : INFO : topic #14 (0.050): 0.014*"face" + 0.012*"rule" + 0.011*"image" + 0.007*"recognition" + 0.007*"word" + 0.006*"class" + 0.005*"loss" + 0.005*"detection" + 0.005*"string" + 0.005*"sequence"
+2018-04-26 22:20:29,640 : INFO : topic #6 (0.050): 0.015*"speech" + 0.012*"recognition" + 0.012*"word" + 0.008*"sequence" + 0.007*"tree" + 0.007*"class" + 0.007*"hidden" + 0.007*"context" + 0.006*"hmm" + 0.006*"speaker"
+2018-04-26 22:20:29,641 : INFO : topic #18 (0.050): 0.030*"hidden" + 0.022*"hidden_unit" + 0.013*"generalization" + 0.008*"layer" + 0.007*"teacher" + 0.006*"student" + 0.006*"training_set" + 0.006*"generalization_error" + 0.005*"bias" + 0.005*"net"
+2018-04-26 22:20:29,641 : INFO : topic #0 (0.050): 0.007*"gradient" + 0.006*"noise" + 0.005*"layer" + 0.005*"prediction" + 0.004*"distance" + 0.004*"training_set" + 0.004*"hidden" + 0.003*"descent" + 0.003*"back" + 0.003*"classifier"
+2018-04-26 22:20:29,641 : INFO : topic diff=0.466397, rho=0.316228
+2018-04-26 22:20:40,222 : INFO : -7.963 per-word bound, 249.5 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:20:40,222 : INFO : PROGRESS: pass 9, at document #1740/1740
+2018-04-26 22:20:46,656 : INFO : topic #13 (0.050): 0.031*"image" + 0.014*"object" + 0.008*"signal" + 0.007*"visual" + 0.006*"sound" + 0.006*"region" + 0.006*"motion" + 0.006*"pixel" + 0.006*"filter" + 0.005*"surface"
+2018-04-26 22:20:46,656 : INFO : topic #18 (0.050): 0.031*"hidden" + 0.022*"hidden_unit" + 0.014*"generalization" + 0.008*"layer" + 0.007*"teacher" + 0.006*"student" + 0.006*"training_set" + 0.006*"generalization_error" + 0.006*"net" + 0.005*"bias"
+2018-04-26 22:20:46,656 : INFO : topic #11 (0.050): 0.010*"matrix" + 0.007*"solution" + 0.006*"attractor" + 0.005*"transformation" + 0.005*"dynamic" + 0.005*"component" + 0.005*"rotation" + 0.004*"object" + 0.004*"view" + 0.004*"image"
+2018-04-26 22:20:46,657 : INFO : topic #2 (0.050): 0.016*"neuron" + 0.010*"dynamic" + 0.009*"matrix" + 0.008*"rule" + 0.007*"eq" + 0.005*"fixed_point" + 0.005*"delay" + 0.004*"signal" + 0.004*"connection" + 0.004*"gradient"
+2018-04-26 22:20:46,657 : INFO : topic #4 (0.050): 0.008*"bound" + 0.007*"sample" + 0.006*"approximation" + 0.006*"estimate" + 0.005*"class" + 0.005*"let" + 0.005*"gaussian" + 0.005*"density" + 0.005*"prior" + 0.005*"log"
+2018-04-26 22:20:46,657 : INFO : topic diff=0.440071, rho=0.301511
+2018-04-26 22:20:57,019 : INFO : -7.953 per-word bound, 247.8 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:20:57,019 : INFO : PROGRESS: pass 10, at document #1740/1740
+2018-04-26 22:21:03,343 : INFO : topic #16 (0.050): 0.016*"control" + 0.015*"motor" + 0.014*"movement" + 0.011*"trajectory" + 0.010*"field" + 0.009*"arm" + 0.008*"position" + 0.006*"controller" + 0.006*"dynamic" + 0.006*"hand"
+2018-04-26 22:21:03,344 : INFO : topic #10 (0.050): 0.012*"orientation" + 0.010*"map" + 0.010*"field" + 0.007*"gaussian" + 0.007*"image" + 0.007*"correlation" + 0.006*"receptive" + 0.006*"basis" + 0.006*"receptive_field" + 0.005*"cortex"
+2018-04-26 22:21:03,344 : INFO : topic #6 (0.050): 0.016*"speech" + 0.013*"recognition" + 0.013*"word" + 0.008*"sequence" + 0.007*"class" + 0.007*"context" + 0.007*"hidden" + 0.007*"tree" + 0.006*"hmm" + 0.006*"speaker"
+2018-04-26 22:21:03,344 : INFO : topic #4 (0.050): 0.008*"bound" + 0.007*"sample" + 0.006*"approximation" + 0.006*"estimate" + 0.005*"class" + 0.005*"let" + 0.005*"gaussian" + 0.005*"density" + 0.005*"prior" + 0.005*"log"
+2018-04-26 22:21:03,344 : INFO : topic #12 (0.050): 0.020*"cell" + 0.019*"neuron" + 0.010*"response" + 0.009*"spike" + 0.008*"stimulus" + 0.008*"activity" + 0.007*"firing" + 0.007*"synaptic" + 0.006*"visual" + 0.005*"signal"
+2018-04-26 22:21:03,345 : INFO : topic diff=0.412837, rho=0.288675
+2018-04-26 22:21:13,662 : INFO : -7.944 per-word bound, 246.3 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:21:13,662 : INFO : PROGRESS: pass 11, at document #1740/1740
+2018-04-26 22:21:19,968 : INFO : topic #8 (0.050): 0.016*"action" + 0.013*"policy" + 0.011*"reinforcement" + 0.010*"control" + 0.007*"reinforcement_learning" + 0.007*"optimal" + 0.006*"reward" + 0.005*"dynamic" + 0.005*"robot" + 0.005*"decision"
+2018-04-26 22:21:19,971 : INFO : topic #11 (0.050): 0.010*"matrix" + 0.007*"solution" + 0.006*"transformation" + 0.006*"attractor" + 0.006*"rotation" + 0.006*"component" + 0.005*"dynamic" + 0.004*"pca" + 0.004*"view" + 0.004*"convergence"
+2018-04-26 22:21:19,972 : INFO : topic #15 (0.050): 0.010*"cluster" + 0.010*"class" + 0.007*"clustering" + 0.006*"classifier" + 0.006*"field" + 0.006*"threshold" + 0.005*"image" + 0.005*"classification" + 0.005*"graph" + 0.004*"layer"
+2018-04-26 22:21:19,972 : INFO : topic #10 (0.050): 0.013*"orientation" + 0.010*"map" + 0.010*"field" + 0.007*"gaussian" + 0.007*"receptive" + 0.007*"correlation" + 0.007*"image" + 0.006*"receptive_field" + 0.006*"basis" + 0.005*"cortex"
+2018-04-26 22:21:19,972 : INFO : topic #18 (0.050): 0.032*"hidden" + 0.023*"hidden_unit" + 0.014*"generalization" + 0.009*"layer" + 0.007*"teacher" + 0.006*"student" + 0.006*"training_set" + 0.006*"net" + 0.006*"generalization_error" + 0.005*"bias"
+2018-04-26 22:21:19,973 : INFO : topic diff=0.385689, rho=0.277350
+2018-04-26 22:21:30,122 : INFO : -7.937 per-word bound, 245.0 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:21:30,122 : INFO : PROGRESS: pass 12, at document #1740/1740
+2018-04-26 22:21:36,231 : INFO : topic #17 (0.050): 0.011*"layer" + 0.010*"character" + 0.009*"net" + 0.008*"module" + 0.008*"recognition" + 0.008*"image" + 0.008*"architecture" + 0.007*"hidden" + 0.006*"digit" + 0.006*"map"
+2018-04-26 22:21:36,231 : INFO : topic #6 (0.050): 0.017*"speech" + 0.014*"word" + 0.014*"recognition" + 0.009*"sequence" + 0.007*"context" + 0.007*"hidden" + 0.007*"class" + 0.007*"hmm" + 0.007*"speaker" + 0.006*"tree"
+2018-04-26 22:21:36,231 : INFO : topic #0 (0.050): 0.008*"gradient" + 0.006*"noise" + 0.005*"prediction" + 0.005*"layer" + 0.004*"distance" + 0.004*"training_set" + 0.004*"classifier" + 0.004*"descent" + 0.004*"nonlinear" + 0.003*"trained"
+2018-04-26 22:21:36,232 : INFO : topic #7 (0.050): 0.021*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.011*"neuron" + 0.010*"voltage" + 0.008*"signal" + 0.008*"vlsi" + 0.006*"implementation" + 0.006*"pulse" + 0.005*"transistor"
+2018-04-26 22:21:36,232 : INFO : topic #8 (0.050): 0.016*"action" + 0.013*"policy" + 0.011*"reinforcement" + 0.010*"control" + 0.007*"reinforcement_learning" + 0.007*"optimal" + 0.006*"reward" + 0.005*"dynamic" + 0.005*"robot" + 0.005*"decision"
+2018-04-26 22:21:36,232 : INFO : topic diff=0.359403, rho=0.267261
+2018-04-26 22:21:46,383 : INFO : -7.930 per-word bound, 243.9 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:21:46,383 : INFO : PROGRESS: pass 13, at document #1740/1740
+2018-04-26 22:21:52,451 : INFO : topic #4 (0.050): 0.008*"bound" + 0.007*"sample" + 0.007*"approximation" + 0.006*"estimate" + 0.006*"class" + 0.005*"let" + 0.005*"gaussian" + 0.005*"prior" + 0.005*"bayesian" + 0.005*"xi"
+2018-04-26 22:21:52,454 : INFO : topic #3 (0.050): 0.017*"channel" + 0.009*"constraint" + 0.009*"matching" + 0.008*"winner" + 0.008*"cell" + 0.008*"rule" + 0.007*"winner_take" + 0.007*"distance" + 0.006*"objective" + 0.006*"curve"
+2018-04-26 22:21:52,455 : INFO : topic #10 (0.050): 0.014*"orientation" + 0.011*"map" + 0.010*"field" + 0.008*"receptive" + 0.007*"receptive_field" + 0.007*"correlation" + 0.007*"gaussian" + 0.006*"image" + 0.006*"basis" + 0.005*"cell"
+2018-04-26 22:21:52,455 : INFO : topic #18 (0.050): 0.033*"hidden" + 0.023*"hidden_unit" + 0.015*"generalization" + 0.009*"layer" + 0.007*"teacher" + 0.007*"net" + 0.006*"training_set" + 0.006*"student" + 0.006*"generalization_error" + 0.005*"bias"
+2018-04-26 22:21:52,455 : INFO : topic #14 (0.050): 0.015*"rule" + 0.014*"face" + 0.009*"image" + 0.008*"class" + 0.007*"recognition" + 0.006*"classification" + 0.006*"word" + 0.006*"detection" + 0.005*"string" + 0.005*"human"
+2018-04-26 22:21:52,456 : INFO : topic diff=0.334347, rho=0.258199
+2018-04-26 22:22:02,371 : INFO : -7.925 per-word bound, 243.0 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:22:02,371 : INFO : PROGRESS: pass 14, at document #1740/1740
+2018-04-26 22:22:08,234 : INFO : topic #7 (0.050): 0.022*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.011*"neuron" + 0.010*"voltage" + 0.009*"signal" + 0.008*"vlsi" + 0.006*"implementation" + 0.006*"pulse" + 0.005*"transistor"
+2018-04-26 22:22:08,234 : INFO : topic #15 (0.050): 0.011*"cluster" + 0.010*"class" + 0.007*"clustering" + 0.007*"field" + 0.006*"classifier" + 0.006*"threshold" + 0.005*"classification" + 0.005*"graph" + 0.005*"image" + 0.004*"mean_field"
+2018-04-26 22:22:08,234 : INFO : topic #8 (0.050): 0.017*"action" + 0.014*"policy" + 0.011*"reinforcement" + 0.010*"control" + 0.008*"reinforcement_learning" + 0.007*"optimal" + 0.006*"reward" + 0.006*"dynamic" + 0.005*"decision" + 0.005*"goal"
+2018-04-26 22:22:08,234 : INFO : topic #14 (0.050): 0.015*"rule" + 0.014*"face" + 0.008*"image" + 0.008*"class" + 0.007*"recognition" + 0.006*"classification" + 0.006*"detection" + 0.006*"word" + 0.005*"string" + 0.005*"human"
+2018-04-26 22:22:08,235 : INFO : topic #11 (0.050): 0.011*"matrix" + 0.007*"solution" + 0.007*"transformation" + 0.006*"rotation" + 0.006*"component" + 0.006*"attractor" + 0.005*"dynamic" + 0.005*"pca" + 0.004*"signature" + 0.004*"convergence"
+2018-04-26 22:22:08,235 : INFO : topic diff=0.310807, rho=0.250000
+2018-04-26 22:22:18,256 : INFO : -7.920 per-word bound, 242.1 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:22:18,256 : INFO : PROGRESS: pass 15, at document #1740/1740
+2018-04-26 22:22:24,186 : INFO : topic #2 (0.050): 0.017*"neuron" + 0.012*"dynamic" + 0.009*"matrix" + 0.008*"rule" + 0.008*"eq" + 0.006*"fixed_point" + 0.005*"gradient" + 0.005*"delay" + 0.005*"signal" + 0.004*"attractor"
+2018-04-26 22:22:24,186 : INFO : topic #17 (0.050): 0.012*"layer" + 0.011*"character" + 0.010*"net" + 0.009*"module" + 0.009*"recognition" + 0.008*"architecture" + 0.008*"image" + 0.007*"hidden" + 0.006*"digit" + 0.006*"connection"
+2018-04-26 22:22:24,187 : INFO : topic #7 (0.050): 0.022*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.011*"neuron" + 0.010*"voltage" + 0.009*"signal" + 0.008*"vlsi" + 0.006*"implementation" + 0.006*"pulse" + 0.005*"transistor"
+2018-04-26 22:22:24,187 : INFO : topic #9 (0.050): 0.007*"solution" + 0.006*"genetic" + 0.006*"optimal" + 0.006*"hint" + 0.005*"search" + 0.005*"language" + 0.005*"let" + 0.005*"theorem" + 0.004*"instance" + 0.004*"computational"
+2018-04-26 22:22:24,187 : INFO : topic #14 (0.050): 0.016*"rule" + 0.014*"face" + 0.008*"class" + 0.008*"image" + 0.007*"recognition" + 0.007*"classification" + 0.006*"detection" + 0.005*"word" + 0.005*"string" + 0.005*"human"
+2018-04-26 22:22:24,187 : INFO : topic diff=0.288926, rho=0.242536
+2018-04-26 22:22:34,102 : INFO : -7.915 per-word bound, 241.4 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:22:34,103 : INFO : PROGRESS: pass 16, at document #1740/1740
+2018-04-26 22:22:39,981 : INFO : topic #7 (0.050): 0.022*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.012*"neuron" + 0.011*"voltage" + 0.009*"signal" + 0.008*"vlsi" + 0.006*"pulse" + 0.006*"implementation" + 0.005*"transistor"
+2018-04-26 22:22:39,982 : INFO : topic #14 (0.050): 0.016*"rule" + 0.014*"face" + 0.008*"class" + 0.008*"image" + 0.007*"classification" + 0.007*"recognition" + 0.006*"detection" + 0.005*"word" + 0.005*"human" + 0.005*"string"
+2018-04-26 22:22:39,982 : INFO : topic #11 (0.050): 0.012*"matrix" + 0.008*"transformation" + 0.008*"solution" + 0.007*"rotation" + 0.007*"component" + 0.006*"attractor" + 0.006*"pca" + 0.005*"dynamic" + 0.004*"signature" + 0.004*"eigenvalue"
+2018-04-26 22:22:39,982 : INFO : topic #17 (0.050): 0.013*"layer" + 0.011*"character" + 0.010*"net" + 0.009*"recognition" + 0.009*"module" + 0.008*"architecture" + 0.008*"image" + 0.007*"hidden" + 0.006*"digit" + 0.006*"connection"
+2018-04-26 22:22:39,982 : INFO : topic #3 (0.050): 0.017*"channel" + 0.012*"constraint" + 0.010*"matching" + 0.009*"winner" + 0.008*"cell" + 0.007*"winner_take" + 0.007*"distance" + 0.007*"rule" + 0.007*"objective" + 0.006*"curve"
+2018-04-26 22:22:39,983 : INFO : topic diff=0.268640, rho=0.235702
+2018-04-26 22:22:49,732 : INFO : -7.911 per-word bound, 240.7 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:22:49,735 : INFO : PROGRESS: pass 17, at document #1740/1740
+2018-04-26 22:22:55,465 : INFO : topic #12 (0.050): 0.021*"neuron" + 0.021*"cell" + 0.010*"response" + 0.009*"spike" + 0.009*"stimulus" + 0.009*"activity" + 0.007*"synaptic" + 0.007*"firing" + 0.006*"visual" + 0.005*"cortex"
+2018-04-26 22:22:55,465 : INFO : topic #9 (0.050): 0.007*"solution" + 0.007*"genetic" + 0.006*"search" + 0.006*"hint" + 0.006*"language" + 0.005*"optimal" + 0.005*"theorem" + 0.005*"let" + 0.005*"computational" + 0.005*"instance"
+2018-04-26 22:22:55,466 : INFO : topic #13 (0.050): 0.036*"image" + 0.018*"object" + 0.010*"visual" + 0.008*"motion" + 0.007*"pixel" + 0.007*"signal" + 0.007*"filter" + 0.006*"region" + 0.006*"view" + 0.006*"sound"
+2018-04-26 22:22:55,466 : INFO : topic #4 (0.050): 0.009*"bound" + 0.007*"sample" + 0.007*"approximation" + 0.006*"estimate" + 0.006*"class" + 0.006*"let" + 0.005*"bayesian" + 0.005*"gaussian" + 0.005*"prior" + 0.005*"xi"
+2018-04-26 22:22:55,466 : INFO : topic #5 (0.050): 0.046*"node" + 0.019*"code" + 0.018*"tree" + 0.013*"bit" + 0.006*"gate" + 0.006*"coding" + 0.006*"log" + 0.006*"belief" + 0.006*"decoding" + 0.005*"binary"
+2018-04-26 22:22:55,466 : INFO : topic diff=0.249971, rho=0.229416
+2018-04-26 22:23:05,295 : INFO : -7.907 per-word bound, 240.1 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:23:05,295 : INFO : PROGRESS: pass 18, at document #1740/1740
+2018-04-26 22:23:11,053 : INFO : topic #9 (0.050): 0.007*"solution" + 0.007*"genetic" + 0.006*"search" + 0.006*"hint" + 0.006*"language" + 0.005*"theorem" + 0.005*"optimal" + 0.005*"let" + 0.005*"computational" + 0.005*"instance"
+2018-04-26 22:23:11,054 : INFO : topic #7 (0.050): 0.023*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.012*"neuron" + 0.011*"voltage" + 0.009*"signal" + 0.009*"vlsi" + 0.006*"pulse" + 0.006*"implementation" + 0.005*"transistor"
+2018-04-26 22:23:11,054 : INFO : topic #14 (0.050): 0.016*"rule" + 0.014*"face" + 0.009*"class" + 0.007*"classification" + 0.007*"image" + 0.006*"recognition" + 0.006*"detection" + 0.005*"human" + 0.005*"word" + 0.005*"string"
+2018-04-26 22:23:11,054 : INFO : topic #15 (0.050): 0.011*"cluster" + 0.011*"class" + 0.008*"clustering" + 0.007*"field" + 0.006*"classifier" + 0.006*"threshold" + 0.005*"classification" + 0.005*"mean_field" + 0.005*"graph" + 0.004*"image"
+2018-04-26 22:23:11,054 : INFO : topic #16 (0.050): 0.023*"control" + 0.016*"motor" + 0.015*"movement" + 0.012*"trajectory" + 0.011*"position" + 0.010*"field" + 0.010*"arm" + 0.009*"controller" + 0.007*"velocity" + 0.007*"robot"
+2018-04-26 22:23:11,055 : INFO : topic diff=0.232816, rho=0.223607
+2018-04-26 22:23:20,880 : INFO : -7.904 per-word bound, 239.5 perplexity estimate based on a held-out corpus of 1740 documents with 1977876 words
+2018-04-26 22:23:20,880 : INFO : PROGRESS: pass 19, at document #1740/1740
+2018-04-26 22:23:26,526 : INFO : topic #7 (0.050): 0.023*"circuit" + 0.018*"chip" + 0.016*"analog" + 0.012*"neuron" + 0.011*"voltage" + 0.009*"signal" + 0.009*"vlsi" + 0.006*"pulse" + 0.006*"implementation" + 0.005*"transistor"
+2018-04-26 22:23:26,526 : INFO : topic #9 (0.050): 0.007*"solution" + 0.007*"genetic" + 0.006*"search" + 0.006*"hint" + 0.006*"language" + 0.005*"theorem" + 0.005*"let" + 0.005*"optimal" + 0.005*"computational" + 0.005*"instance"
+2018-04-26 22:23:26,526 : INFO : topic #17 (0.050): 0.013*"layer" + 0.011*"character" + 0.011*"net" + 0.009*"recognition" + 0.009*"module" + 0.009*"architecture" + 0.008*"image" + 0.007*"hidden" + 0.006*"digit" + 0.006*"connection"
+2018-04-26 22:23:26,527 : INFO : topic #0 (0.050): 0.008*"gradient" + 0.006*"prediction" + 0.006*"noise" + 0.005*"layer" + 0.004*"distance" + 0.004*"training_set" + 0.004*"classifier" + 0.004*"nonlinear" + 0.004*"descent" + 0.003*"trained"
+2018-04-26 22:23:26,527 : INFO : topic #3 (0.050): 0.017*"channel" + 0.014*"constraint" + 0.011*"matching" + 0.009*"winner" + 0.009*"cell" + 0.008*"distance" + 0.008*"winner_take" + 0.007*"optimization" + 0.007*"objective" + 0.007*"match"
+2018-04-26 22:23:26,528 : INFO : topic diff=0.217081, rho=0.218218
+2018-04-26 22:23:26,672 : INFO : CorpusAccumulator accumulated stats from 1000 documents

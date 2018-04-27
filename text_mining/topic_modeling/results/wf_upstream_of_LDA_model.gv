@@ -1,0 +1,55 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="topic_modeling"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+ConstructCorpus
+Train_LDA_Model
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+ConstructCorpus
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+Static_text
+dictionary
+Corpus
+LDA_model
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+stopwords
+regular_expression
+num_iteration
+num_topics
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+Static_text_inflow [label=""]
+stopwords_inflow [label=""]
+regular_expression_inflow [label=""]
+num_iteration_inflow [label=""]
+num_topics_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+LDA_model_outflow [label=""]
+}}
+num_topics -> Train_LDA_Model
+num_iteration -> Train_LDA_Model
+Corpus -> Train_LDA_Model
+dictionary -> Train_LDA_Model
+regular_expression -> ConstructCorpus
+stopwords -> ConstructCorpus
+Static_text -> ConstructCorpus
+ConstructCorpus -> dictionary
+ConstructCorpus -> Corpus
+Train_LDA_Model -> LDA_model
+Static_text_inflow -> Static_text
+stopwords_inflow -> stopwords
+regular_expression_inflow -> regular_expression
+num_iteration_inflow -> num_iteration
+num_topics_inflow -> num_topics
+LDA_model -> LDA_model_outflow
+}
+
