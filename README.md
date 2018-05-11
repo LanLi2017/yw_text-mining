@@ -12,6 +12,7 @@ In the queries part, use yw-queries which includes simple generic queries and ad
 *  [YesWorkflow](https://github.com/yesworkflow-org/yw-prototypes)
 *  [Gensim](https://radimrehurek.com/gensim/models/ldamodel.html)
 *  [yw-queries](https://github.com/yesworkflow-org/yw-idcc-17/tree/master/queries)
+*  [log-queries](https://github.com/kurator-org/kurator-SPNHC17-YW)
 *  [yw-recon](https://github.com/yesworkflow-org/yw-tapp-15-recon) 
 *  [NLTK](http://www.nltk.org/book/ch01.html)
 *  [LOG](https://docs.python.org/3/library/logging.html)
