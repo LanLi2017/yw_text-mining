@@ -53,18 +53,3 @@ Please
 Note: after running `clean.sh` and `make.sh`, you can use git status to see what demo artifacts have just been created.
 
 ```
-```
-topic_modeling/
-├── clean.sh
-├── facts
-│   ├── yw_extract_facts.P
-│   └── yw_model_facts.P
-├── make.sh
-├── results
-├── script
-│   ├── LDA_model.txt
-│   ├── run_log.log
-│   └── topic_modeling.py
-└── views
-    └── yw_views.P
- ```
