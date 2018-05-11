@@ -65,7 +65,6 @@ topic_modeling/
 │   ├── LDA_model.txt
 │   ├── run_log.log
 │   └── topic_modeling.py
-|   |__ yw_gen_reconfacts.sh 
 └── views
     └── yw_views.P
  ```
