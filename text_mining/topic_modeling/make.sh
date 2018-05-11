@@ -50,10 +50,10 @@ $QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'LDA_model\' > $RESULTS_DIR
 dot -Tpdf $RESULTS_DIR/wf_upstream_of_LDA_model.gv > $RESULTS_DIR/wf_upstream_of_LDA_model.pdf
 dot -Tsvg $RESULTS_DIR/wf_upstream_of_LDA_model.gv > $RESULTS_DIR/wf_upstream_of_LDA_model.svg
 
-# draw worfklow graph upstream of run_log
-$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'run_log\' > $RESULTS_DIR/wf_upstream_of_run_log.gv
-dot -Tpdf $RESULTS_DIR/wf_upstream_of_run_log.gv > $RESULTS_DIR/wf_upstream_of_run_log.pdf
-dot -Tsvg $RESULTS_DIR/wf_upstream_of_run_log.gv > $RESULTS_DIR/wf_upstream_of_run_log.svg
+# draw worfklow graph upstream of LogFile
+$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'LogFile\' > $RESULTS_DIR/wf_upstream_of_LogFile.gv
+dot -Tpdf $RESULTS_DIR/wf_upstream_of_LogFile.gv > $RESULTS_DIR/wf_upstream_of_LogFile.pdf
+dot -Tsvg $RESULTS_DIR/wf_upstream_of_LogFile.gv > $RESULTS_DIR/wf_upstream_of_LogFile.svg
 
 # draw worfklow graph upstream of dictionary
 $QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'dictionary\' > $RESULTS_DIR/wf_upstream_of_dictionary.gv
@@ -77,8 +77,8 @@ dot -Tsvg $RESULTS_DIR/wf_upstream_of_Corpus.gv > $RESULTS_DIR/wf_upstream_of_Co
 # list script inputs upstream of output data LDA_model
 $QUERIES_DIR/list_inputs_upstream_of_data_q2.sh \'LDA_model\' Topicmodeling_Result > $RESULTS_DIR/inputs_upstream_of_LDA_model.txt
 
-# list script inputs upstream of output data run_log
-$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh \'run_log\' Topicmodeling_Result > $RESULTS_DIR/inputs_upstream_of_run_log.txt
+# list script inputs upstream of output data LogFile
+$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh \'LogFile\' Topicmodeling_Result > $RESULTS_DIR/inputs_upstream_of_LogFile.txt
 
 ##############
 #   Q3_pro   #
@@ -118,10 +118,10 @@ $QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh \'LDA_model\' > $RESUL
 dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_LDA_model.gv > $RESULTS_DIR/wf_recon_upstream_of_LDA_model.pdf
 dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_LDA_model.gv > $RESULTS_DIR/wf_recon_upstream_of_LDA_model.svg
 
-# draw recon worfklow graph upstream of run_log
-$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh \'run_log\' > $RESULTS_DIR/wf_recon_upstream_of_run_log.gv
-dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_run_log.gv > $RESULTS_DIR/wf_recon_upstream_of_run_log.pdf
-dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_run_log.gv > $RESULTS_DIR/wf_recon_upstream_of_run_log.svg
+# draw recon worfklow graph upstream of LogFile
+$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh \'LogFile\' > $RESULTS_DIR/wf_recon_upstream_of_LogFile.gv
+dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_LogFile.gv > $RESULTS_DIR/wf_recon_upstream_of_LogFile.pdf
+dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_LogFile.gv > $RESULTS_DIR/wf_recon_upstream_of_LogFile.svg
 
 ##############
 #   Q6_pro   #
