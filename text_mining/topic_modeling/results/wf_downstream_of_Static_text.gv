@@ -11,6 +11,7 @@ ConstructCorpus
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 ConstructCorpus
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+LogFile
 Static_text
 dictionary
 Corpus
@@ -26,14 +27,17 @@ subgraph cluster_outflows { label=""; color=white; penwidth=2
 subgraph cluster_outflows_inner { label=""; color=white
 node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
 LDA_model_outflow [label=""]
+LogFile_outflow [label=""]
 }}
 Train_LDA_Model -> LDA_model
 ConstructCorpus -> Corpus
 ConstructCorpus -> dictionary
+Train_LDA_Model -> LogFile
 Static_text -> ConstructCorpus
 dictionary -> Train_LDA_Model
 Corpus -> Train_LDA_Model
 Static_text_inflow -> Static_text
 LDA_model -> LDA_model_outflow
+LogFile -> LogFile_outflow
 }
 

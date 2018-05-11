@@ -10,7 +10,7 @@ Train_LDA_Model [shape=record rankdir=LR label="{<f0> Train_LDA_Model |<f1> usin
 node[shape=box style=filled fillcolor="#CCFFCC" peripheries=2 fontname=Courier]
 ConstructCorpus [shape=record rankdir=LR label="{<f0> ConstructCorpus |<f1> Using Gensim to construct corpus to train LDA models}"];
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
-run_log [shape=record rankdir=LR label="{<f0> run_log |<f1> file\:run_log.log}"];
+LogFile [shape=record rankdir=LR label="{<f0> LogFile |<f1> file\:run_log.log}"];
 LDA_model [shape=record rankdir=LR label="{<f0> LDA_model |<f1> file\:LDA_model.txt}"];
 Static_text [shape=record rankdir=LR label="{<f0> Static_text |<f1> file\:news2012.txt}"];
 Corpus
@@ -20,13 +20,14 @@ stopwords
 regular_expression
 num_iteration
 num_topics
-initialize_run -> run_log
+initialize_run -> LogFile
 ConstructCorpus -> dictionary
 ConstructCorpus -> Corpus
 Static_text -> ConstructCorpus
 stopwords -> ConstructCorpus
 regular_expression -> ConstructCorpus
 Train_LDA_Model -> LDA_model
+Train_LDA_Model -> LogFile
 Corpus -> Train_LDA_Model
 dictionary -> Train_LDA_Model
 num_iteration -> Train_LDA_Model
@@ -44,7 +45,7 @@ num_iteration_input_port [label=""]
 subgraph cluster_output_ports_group_outer { label=""; color=white
 subgraph cluster_output_ports_group_inner { label=""; color=white
 node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
-run_log_output_port [label=""]
+LogFile_output_port [label=""]
 LDA_model_output_port [label=""]
 }}
 Static_text_input_port -> Static_text
@@ -52,6 +53,6 @@ stopwords_input_port -> stopwords
 regular_expression_input_port -> regular_expression
 num_topics_input_port -> num_topics
 num_iteration_input_port -> num_iteration
-run_log -> run_log_output_port
+LogFile -> LogFile_output_port
 LDA_model -> LDA_model_output_port
 }

@@ -28,11 +28,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_outflows</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="168,-8 168,-54 214,-54 214,-8 168,-8"/>
+<polygon fill="none" stroke="white" stroke-width="2" points="180,-8 180,-54 226,-54 226,-8 180,-8"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_outflows_inner</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="176,-16 176,-46 206,-46 206,-16 176,-16"/>
+<polygon fill="none" stroke="white" stroke-width="2" points="188,-16 188,-46 218,-46 218,-16 188,-16"/>
 </g>
 <!-- ConstructCorpus -->
 <g id="node1" class="node">
@@ -41,25 +41,25 @@
 <text text-anchor="middle" x="149" y="-308.8" font-family="Courier,monospace" font-size="14.00">ConstructCorpus</text>
 </g>
 <!-- dictionary -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>dictionary</title>
 <path fill="#ffffcc" stroke="black" d="M87.917,-259C87.917,-259 36.083,-259 36.083,-259 30.083,-259 24.083,-253 24.083,-247 24.083,-247 24.083,-235 24.083,-235 24.083,-229 30.083,-223 36.083,-223 36.083,-223 87.917,-223 87.917,-223 93.917,-223 99.917,-229 99.917,-235 99.917,-235 99.917,-247 99.917,-247 99.917,-253 93.917,-259 87.917,-259"/>
 <text text-anchor="middle" x="62" y="-236.8" font-family="Helvetica,sans-Serif" font-size="14.00">dictionary</text>
 </g>
 <!-- ConstructCorpus&#45;&gt;dictionary -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>ConstructCorpus&#45;&gt;dictionary</title>
 <path fill="none" stroke="black" d="M127.046,-294.831C116.331,-285.963 103.281,-275.164 91.691,-265.572"/>
 <polygon fill="black" stroke="black" points="93.8822,-262.842 83.9467,-259.163 89.4192,-268.235 93.8822,-262.842"/>
 </g>
 <!-- Corpus -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>Corpus</title>
 <path fill="#ffffcc" stroke="black" d="M167.631,-259C167.631,-259 130.369,-259 130.369,-259 124.369,-259 118.369,-253 118.369,-247 118.369,-247 118.369,-235 118.369,-235 118.369,-229 124.369,-223 130.369,-223 130.369,-223 167.631,-223 167.631,-223 173.631,-223 179.631,-229 179.631,-235 179.631,-235 179.631,-247 179.631,-247 179.631,-253 173.631,-259 167.631,-259"/>
 <text text-anchor="middle" x="149" y="-236.8" font-family="Helvetica,sans-Serif" font-size="14.00">Corpus</text>
 </g>
 <!-- ConstructCorpus&#45;&gt;Corpus -->
-<g id="edge9" class="edge">
+<g id="edge10" class="edge">
 <title>ConstructCorpus&#45;&gt;Corpus</title>
 <path fill="none" stroke="black" d="M149,-294.831C149,-287.131 149,-277.974 149,-269.417"/>
 <polygon fill="black" stroke="black" points="152.5,-269.413 149,-259.413 145.5,-269.413 152.5,-269.413"/>
@@ -67,37 +67,49 @@
 <!-- Train_LDA_Model -->
 <g id="node2" class="node">
 <title>Train_LDA_Model</title>
-<polygon fill="#ccffcc" stroke="black" points="262.021,-187 119.979,-187 119.979,-151 262.021,-151 262.021,-187"/>
-<text text-anchor="middle" x="191" y="-164.8" font-family="Courier,monospace" font-size="14.00">Train_LDA_Model</text>
+<polygon fill="#ccffcc" stroke="black" points="196.021,-187 53.9795,-187 53.9795,-151 196.021,-151 196.021,-187"/>
+<text text-anchor="middle" x="125" y="-164.8" font-family="Courier,monospace" font-size="14.00">Train_LDA_Model</text>
 </g>
-<!-- LDA_model -->
-<g id="node6" class="node">
-<title>LDA_model</title>
-<path fill="#ffe4b5" stroke="black" d="M159.894,-78.5C159.894,-78.5 222.106,-78.5 222.106,-78.5 228.106,-78.5 234.106,-84.5 234.106,-90.5 234.106,-90.5 234.106,-102.5 234.106,-102.5 234.106,-108.5 228.106,-114.5 222.106,-114.5 222.106,-114.5 159.894,-114.5 159.894,-114.5 153.894,-114.5 147.894,-108.5 147.894,-102.5 147.894,-102.5 147.894,-90.5 147.894,-90.5 147.894,-84.5 153.894,-78.5 159.894,-78.5"/>
-<text text-anchor="middle" x="191" y="-102.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">LDA_model</text>
-<polyline fill="none" stroke="black" points="147.894,-96.5 234.106,-96.5 "/>
-<text text-anchor="start" x="155.894" y="-84.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">LDA_model.txt</text>
+<!-- LogFile -->
+<g id="node7" class="node">
+<title>LogFile</title>
+<path fill="#ffe4b5" stroke="black" d="M188,-78.5C188,-78.5 218,-78.5 218,-78.5 224,-78.5 230,-84.5 230,-90.5 230,-90.5 230,-102.5 230,-102.5 230,-108.5 224,-114.5 218,-114.5 218,-114.5 188,-114.5 188,-114.5 182,-114.5 176,-108.5 176,-102.5 176,-102.5 176,-90.5 176,-90.5 176,-84.5 182,-78.5 188,-78.5"/>
+<text text-anchor="middle" x="202.903" y="-102.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">LogFile</text>
+<polyline fill="none" stroke="black" points="176,-96.5 229.806,-96.5 "/>
+<text text-anchor="middle" x="202.903" y="-84.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00"> </text>
 </g>
-<!-- Train_LDA_Model&#45;&gt;LDA_model -->
-<g id="edge10" class="edge">
-<title>Train_LDA_Model&#45;&gt;LDA_model</title>
-<path fill="none" stroke="black" d="M191,-150.705C191,-142.832 191,-133.447 191,-124.717"/>
-<polygon fill="black" stroke="black" points="194.5,-124.538 191,-114.538 187.5,-124.538 194.5,-124.538"/>
+<!-- Train_LDA_Model&#45;&gt;LogFile -->
+<g id="edge11" class="edge">
+<title>Train_LDA_Model&#45;&gt;LogFile</title>
+<path fill="none" stroke="black" d="M144.683,-150.705C154.177,-141.88 165.715,-131.156 176.014,-121.583"/>
+<polygon fill="black" stroke="black" points="178.652,-123.91 183.594,-114.538 173.886,-118.782 178.652,-123.91"/>
+</g>
+<!-- initialize_run -->
+<g id="node3" class="node">
+<title>initialize_run</title>
+<polygon fill="#ccffcc" stroke="black" points="347.62,-187 214.38,-187 214.38,-151 347.62,-151 347.62,-187"/>
+<text text-anchor="middle" x="281" y="-164.8" font-family="Courier,monospace" font-size="14.00">initialize_run</text>
+</g>
+<!-- initialize_run&#45;&gt;LogFile -->
+<g id="edge8" class="edge">
+<title>initialize_run&#45;&gt;LogFile</title>
+<path fill="none" stroke="black" d="M261.317,-150.705C251.823,-141.88 240.285,-131.156 229.986,-121.583"/>
+<polygon fill="black" stroke="black" points="232.114,-118.782 222.406,-114.538 227.348,-123.91 232.114,-118.782"/>
 </g>
 <!-- dictionary&#45;&gt;Train_LDA_Model -->
 <g id="edge4" class="edge">
 <title>dictionary&#45;&gt;Train_LDA_Model</title>
-<path fill="none" stroke="black" d="M94.5521,-222.831C111.205,-213.537 131.659,-202.121 149.439,-192.197"/>
-<polygon fill="black" stroke="black" points="151.432,-195.093 158.458,-187.163 148.02,-188.98 151.432,-195.093"/>
+<path fill="none" stroke="black" d="M77.8976,-222.831C85.2278,-214.454 94.066,-204.353 102.097,-195.175"/>
+<polygon fill="black" stroke="black" points="104.937,-197.244 108.888,-187.413 99.6693,-192.634 104.937,-197.244"/>
 </g>
 <!-- Corpus&#45;&gt;Train_LDA_Model -->
 <g id="edge3" class="edge">
 <title>Corpus&#45;&gt;Train_LDA_Model</title>
-<path fill="none" stroke="black" d="M159.598,-222.831C164.288,-214.792 169.903,-205.167 175.08,-196.292"/>
-<polygon fill="black" stroke="black" points="178.243,-197.815 180.259,-187.413 172.197,-194.288 178.243,-197.815"/>
+<path fill="none" stroke="black" d="M142.944,-222.831C140.349,-215.046 137.258,-205.773 134.378,-197.135"/>
+<polygon fill="black" stroke="black" points="137.62,-195.793 131.138,-187.413 130.98,-198.007 137.62,-195.793"/>
 </g>
 <!-- Static_text -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>Static_text</title>
 <path fill="#ffe4b5" stroke="black" d="M221.295,-367.5C221.295,-367.5 272.705,-367.5 272.705,-367.5 278.705,-367.5 284.705,-373.5 284.705,-379.5 284.705,-379.5 284.705,-391.5 284.705,-391.5 284.705,-397.5 278.705,-403.5 272.705,-403.5 272.705,-403.5 221.295,-403.5 221.295,-403.5 215.295,-403.5 209.295,-397.5 209.295,-391.5 209.295,-391.5 209.295,-379.5 209.295,-379.5 209.295,-373.5 215.295,-367.5 221.295,-367.5"/>
 <text text-anchor="middle" x="247" y="-391.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">Static_text</text>
@@ -110,19 +122,19 @@
 <path fill="none" stroke="black" d="M222.523,-367.392C210.129,-358.223 194.914,-346.967 181.547,-337.078"/>
 <polygon fill="black" stroke="black" points="183.625,-334.262 173.504,-331.128 179.462,-339.889 183.625,-334.262"/>
 </g>
-<!-- LDA_model_outflow -->
-<g id="node16" class="node">
-<title>LDA_model_outflow</title>
-<ellipse fill="none" stroke="black" cx="191" cy="-31" rx="7" ry="7"/>
+<!-- LogFile_outflow -->
+<g id="node17" class="node">
+<title>LogFile_outflow</title>
+<ellipse fill="none" stroke="black" cx="203" cy="-31" rx="7" ry="7"/>
 </g>
-<!-- LDA_model&#45;&gt;LDA_model_outflow -->
-<g id="edge16" class="edge">
-<title>LDA_model&#45;&gt;LDA_model_outflow</title>
-<path fill="none" stroke="black" d="M191,-78.2546C191,-68.8859 191,-57.5326 191,-48.3027"/>
-<polygon fill="black" stroke="black" points="194.5,-48.0563 191,-38.0563 187.5,-48.0563 194.5,-48.0563"/>
+<!-- LogFile&#45;&gt;LogFile_outflow -->
+<g id="edge17" class="edge">
+<title>LogFile&#45;&gt;LogFile_outflow</title>
+<path fill="none" stroke="black" d="M203,-78.2546C203,-68.8859 203,-57.5326 203,-48.3027"/>
+<polygon fill="black" stroke="black" points="206.5,-48.0563 203,-38.0563 199.5,-48.0563 206.5,-48.0563"/>
 </g>
 <!-- stopwords -->
-<g id="node7" class="node">
+<g id="node8" class="node">
 <title>stopwords</title>
 <path fill="#ffffff" stroke="black" d="M179.519,-403.5C179.519,-403.5 146.481,-403.5 146.481,-403.5 140.481,-403.5 134.481,-397.5 134.481,-391.5 134.481,-391.5 134.481,-379.5 134.481,-379.5 134.481,-373.5 140.481,-367.5 146.481,-367.5 146.481,-367.5 179.519,-367.5 179.519,-367.5 185.519,-367.5 191.519,-373.5 191.519,-379.5 191.519,-379.5 191.519,-391.5 191.519,-391.5 191.519,-397.5 185.519,-403.5 179.519,-403.5"/>
 <text text-anchor="middle" x="163" y="-382.8" font-family="Helvetica,sans-Serif" font-size="9.00">stopwords</text>
@@ -134,7 +146,7 @@
 <polygon fill="black" stroke="black" points="157.816,-340.193 152.483,-331.038 150.943,-341.52 157.816,-340.193"/>
 </g>
 <!-- regular_expression -->
-<g id="node8" class="node">
+<g id="node9" class="node">
 <title>regular_expression</title>
 <path fill="#ffffff" stroke="black" d="M104.045,-403.5C104.045,-403.5 35.9549,-403.5 35.9549,-403.5 29.9549,-403.5 23.9549,-397.5 23.9549,-391.5 23.9549,-391.5 23.9549,-379.5 23.9549,-379.5 23.9549,-373.5 29.9549,-367.5 35.9549,-367.5 35.9549,-367.5 104.045,-367.5 104.045,-367.5 110.045,-367.5 116.045,-373.5 116.045,-379.5 116.045,-379.5 116.045,-391.5 116.045,-391.5 116.045,-397.5 110.045,-403.5 104.045,-403.5"/>
 <text text-anchor="middle" x="70" y="-382.8" font-family="Helvetica,sans-Serif" font-size="9.00">regular_expression</text>
@@ -146,7 +158,7 @@
 <polygon fill="black" stroke="black" points="124.344,-340.378 129.345,-331.038 119.611,-335.221 124.344,-340.378"/>
 </g>
 <!-- num_iteration -->
-<g id="node9" class="node">
+<g id="node10" class="node">
 <title>num_iteration</title>
 <path fill="#ffffff" stroke="black" d="M256.033,-259C256.033,-259 209.967,-259 209.967,-259 203.967,-259 197.967,-253 197.967,-247 197.967,-247 197.967,-235 197.967,-235 197.967,-229 203.967,-223 209.967,-223 209.967,-223 256.033,-223 256.033,-223 262.033,-223 268.033,-229 268.033,-235 268.033,-235 268.033,-247 268.033,-247 268.033,-253 262.033,-259 256.033,-259"/>
 <text text-anchor="middle" x="233" y="-238.3" font-family="Helvetica,sans-Serif" font-size="9.00">num_iteration</text>
@@ -154,11 +166,11 @@
 <!-- num_iteration&#45;&gt;Train_LDA_Model -->
 <g id="edge2" class="edge">
 <title>num_iteration&#45;&gt;Train_LDA_Model</title>
-<path fill="none" stroke="black" d="M222.402,-222.831C217.712,-214.792 212.097,-205.167 206.92,-196.292"/>
-<polygon fill="black" stroke="black" points="209.803,-194.288 201.741,-187.413 203.757,-197.815 209.803,-194.288"/>
+<path fill="none" stroke="black" d="M205.747,-222.831C192.061,-213.707 175.309,-202.539 160.617,-192.745"/>
+<polygon fill="black" stroke="black" points="162.506,-189.798 152.244,-187.163 158.623,-195.622 162.506,-189.798"/>
 </g>
 <!-- num_topics -->
-<g id="node10" class="node">
+<g id="node11" class="node">
 <title>num_topics</title>
 <path fill="#ffffff" stroke="black" d="M336.024,-259C336.024,-259 297.976,-259 297.976,-259 291.976,-259 285.976,-253 285.976,-247 285.976,-247 285.976,-235 285.976,-235 285.976,-229 291.976,-223 297.976,-223 297.976,-223 336.024,-223 336.024,-223 342.024,-223 348.024,-229 348.024,-235 348.024,-235 348.024,-247 348.024,-247 348.024,-253 342.024,-259 336.024,-259"/>
 <text text-anchor="middle" x="317" y="-238.3" font-family="Helvetica,sans-Serif" font-size="9.00">num_topics</text>
@@ -166,60 +178,60 @@
 <!-- num_topics&#45;&gt;Train_LDA_Model -->
 <g id="edge1" class="edge">
 <title>num_topics&#45;&gt;Train_LDA_Model</title>
-<path fill="none" stroke="black" d="M285.854,-223.202C269.471,-213.84 249.187,-202.25 231.587,-192.193"/>
-<polygon fill="black" stroke="black" points="233.082,-189.016 222.663,-187.093 229.609,-195.093 233.082,-189.016"/>
+<path fill="none" stroke="black" d="M285.661,-226.607C282.746,-225.356 279.826,-224.136 277,-223 248.293,-211.464 216.056,-199.828 188.682,-190.327"/>
+<polygon fill="black" stroke="black" points="189.81,-187.014 179.215,-187.059 187.526,-193.631 189.81,-187.014"/>
 </g>
 <!-- Static_text_inflow -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>Static_text_inflow</title>
 <ellipse fill="none" stroke="black" cx="247" cy="-451" rx="7" ry="7"/>
 </g>
 <!-- Static_text_inflow&#45;&gt;Static_text -->
-<g id="edge11" class="edge">
+<g id="edge12" class="edge">
 <title>Static_text_inflow&#45;&gt;Static_text</title>
 <path fill="none" stroke="black" d="M247,-443.99C247,-436.738 247,-424.935 247,-413.824"/>
 <polygon fill="black" stroke="black" points="250.5,-413.555 247,-403.555 243.5,-413.555 250.5,-413.555"/>
 </g>
 <!-- stopwords_inflow -->
-<g id="node12" class="node">
+<g id="node13" class="node">
 <title>stopwords_inflow</title>
 <ellipse fill="none" stroke="black" cx="215" cy="-451" rx="7" ry="7"/>
 </g>
 <!-- stopwords_inflow&#45;&gt;stopwords -->
-<g id="edge12" class="edge">
+<g id="edge13" class="edge">
 <title>stopwords_inflow&#45;&gt;stopwords</title>
 <path fill="none" stroke="black" d="M210.943,-444.834C207.797,-440.137 203.268,-433.554 199,-428 194.901,-422.667 190.371,-417.094 185.948,-411.805"/>
 <polygon fill="black" stroke="black" points="188.299,-409.166 179.162,-403.804 182.961,-413.694 188.299,-409.166"/>
 </g>
 <!-- regular_expression_inflow -->
-<g id="node13" class="node">
+<g id="node14" class="node">
 <title>regular_expression_inflow</title>
 <ellipse fill="none" stroke="black" cx="183" cy="-451" rx="7" ry="7"/>
 </g>
 <!-- regular_expression_inflow&#45;&gt;regular_expression -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>regular_expression_inflow&#45;&gt;regular_expression</title>
 <path fill="none" stroke="black" d="M176.483,-447.704C165.664,-442.191 143.371,-430.654 125,-420 119.038,-416.543 112.787,-412.769 106.725,-409.027"/>
 <polygon fill="black" stroke="black" points="108.371,-405.929 98.0336,-403.608 104.668,-411.869 108.371,-405.929"/>
 </g>
 <!-- num_iteration_inflow -->
-<g id="node14" class="node">
+<g id="node15" class="node">
 <title>num_iteration_inflow</title>
 <ellipse fill="none" stroke="black" cx="279" cy="-451" rx="7" ry="7"/>
 </g>
 <!-- num_iteration_inflow&#45;&gt;num_iteration -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>num_iteration_inflow&#45;&gt;num_iteration</title>
 <path fill="none" stroke="black" d="M282.844,-445.125C286.538,-439.103 291.863,-429.324 294,-420 299.263,-397.04 299.265,-389.96 294,-367 285.666,-330.661 265.417,-292.629 250.524,-267.982"/>
 <polygon fill="black" stroke="black" points="253.347,-265.892 245.115,-259.222 247.391,-269.57 253.347,-265.892"/>
 </g>
 <!-- num_topics_inflow -->
-<g id="node15" class="node">
+<g id="node16" class="node">
 <title>num_topics_inflow</title>
 <ellipse fill="none" stroke="black" cx="311" cy="-451" rx="7" ry="7"/>
 </g>
 <!-- num_topics_inflow&#45;&gt;num_topics -->
-<g id="edge15" class="edge">
+<g id="edge16" class="edge">
 <title>num_topics_inflow&#45;&gt;num_topics</title>
 <path fill="none" stroke="black" d="M315.098,-445.164C319.035,-439.172 324.713,-429.417 327,-420 340.11,-366.014 332.079,-350.323 327,-295 326.228,-286.588 324.792,-277.532 323.245,-269.284"/>
 <polygon fill="black" stroke="black" points="326.658,-268.499 321.267,-259.378 319.793,-269.87 326.658,-268.499"/>

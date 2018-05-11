@@ -6,24 +6,54 @@ label="topic_modeling"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+ConstructCorpus
+Train_LDA_Model
 initialize_run
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+ConstructCorpus
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+dictionary
+Corpus
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
+Static_text[shape=record rankdir=LR label="{<f0> Static_text |<f1>}"]
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
-run_log[shape=record rankdir=LR label="{<f0> run_log |<f1>run_log.log\l}"]
+LogFile[shape=record rankdir=LR label="{<f0> LogFile |<f1>}"]
 node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+stopwords
+regular_expression
+num_iteration
+num_topics
 }}
 subgraph cluster_inflows { label=""; color=white; penwidth=2
 subgraph cluster_inflows_inner { label=""; color=white
 node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+Static_text_inflow [label=""]
+stopwords_inflow [label=""]
+regular_expression_inflow [label=""]
+num_iteration_inflow [label=""]
+num_topics_inflow [label=""]
 }}
 subgraph cluster_outflows { label=""; color=white; penwidth=2
 subgraph cluster_outflows_inner { label=""; color=white
 node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
-run_log_outflow [label=""]
+LogFile_outflow [label=""]
 }}
-initialize_run -> run_log
-run_log -> run_log_outflow
+num_topics -> Train_LDA_Model
+num_iteration -> Train_LDA_Model
+Corpus -> Train_LDA_Model
+dictionary -> Train_LDA_Model
+regular_expression -> ConstructCorpus
+stopwords -> ConstructCorpus
+Static_text -> ConstructCorpus
+initialize_run -> LogFile
+ConstructCorpus -> dictionary
+ConstructCorpus -> Corpus
+Train_LDA_Model -> LogFile
+Static_text_inflow -> Static_text
+stopwords_inflow -> stopwords
+regular_expression_inflow -> regular_expression
+num_iteration_inflow -> num_iteration
+num_topics_inflow -> num_topics
+LogFile -> LogFile_outflow
 }
 
