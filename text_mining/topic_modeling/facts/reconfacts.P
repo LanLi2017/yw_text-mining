@@ -1,4 +1,3 @@
-
 % FACT: resource(resource_id, resource_uri).
 resource(1, 'news2012.txt').
 resource(2, 'LDA_model.txt').
@@ -13,3 +12,4 @@ data_resource(14, 1).
 data_resource(22, 2).
 
 % FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
+% FACT: log_variable_value(resource_id, log_entry_id, log_variable_id, log_variable_value).
